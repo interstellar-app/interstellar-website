@@ -1,0 +1,25 @@
+---
+title: Downloads
+template: splash
+---
+
+import { Tabs, TabItem, Card, CardGrid } from '@astrojs/starlight/components';
+
+<Tabs>
+  <TabItem label="Android">
+    <CardGrid>
+      <Card title="App Stores" icon="open-book">
+        [![](../../assets/GooglePlay-badge.png)](https://play.google.com/store/apps/details?id=one.jwr.interstellar)
+        [![](../../assets/IzzyOnDroid-badge.png)](https://apt.izzysoft.de/fdroid/index/apk/one.jwr.interstellar)
+      </Card>
+      <Card title="Package Managers" icon="information">
+        More information you want to share.
+      </Card>
+      <Card title="File Downloads" icon="information">
+        More information you want to share.
+      </Card>
+    </CardGrid>
+  </TabItem>
+  <TabItem label="Linux">Io, Europa, Ganymede</TabItem>
+  <TabItem label="Windows">Io, Europa, Ganymede</TabItem>
+</Tabs>
