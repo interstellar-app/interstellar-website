@@ -7,7 +7,7 @@ By sponsoring [jwr1](https://github.com/jwr1), you can help pay for the followin
 - The servers and services running [kbin.earth](https://kbin.earth) (Interstellar's home Mbin instance).
 - The domains used for Interstellar and kbin.earth.
 - Time spent developing Interstellar and administrating kbin.earth
-- Any additional future liabilities (like an Apple Developer account).
+- Any additional future costs (e.g., an Apple Developer account).
 
 You can use one of the following links if you've decided to be a sponsor:
 
