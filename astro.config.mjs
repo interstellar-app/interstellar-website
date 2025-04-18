@@ -14,17 +14,17 @@ export default defineConfig({
         matrix: 'https://matrix.to/#/#interstellar-space:matrix.org',
       },
       sidebar: [
-        {
-          label: 'Guides',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', slug: 'guides/example' },
-          ],
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
+        // {
+        //   label: 'Guides',
+        //   items: [
+        //     // Each item here is one entry in the navigation menu.
+        //     { label: 'Example Guide', slug: 'guides/example' },
+        //   ],
+        // },
+        // {
+        //   label: 'Reference',
+        //   autogenerate: { directory: 'reference' },
+        // },
       ],
     }),
   ],

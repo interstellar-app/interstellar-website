@@ -1,0 +1,117 @@
+---
+title: Install
+template: splash
+hero:
+  title: Install Interstellar
+  actions:
+    - text: Latest GitHub release
+      link: https://github.com/interstellar-app/interstellar/releases/latest
+      icon: github
+      variant: primary
+---
+
+import {
+  Tabs,
+  TabItem,
+  Card,
+  CardGrid,
+  LinkButton,
+  Code,
+} from '@astrojs/starlight/components';
+
+<Tabs>
+  <TabItem label="Android">
+    <CardGrid>
+      <Card title="App Stores" icon="cloud-download">
+        [![](../../assets/GooglePlay-badge.png)](https://play.google.com/store/apps/details?id=one.jwr.interstellar)
+        [![](../../assets/IzzyOnDroid-badge.png)](https://apt.izzysoft.de/fdroid/index/apk/one.jwr.interstellar)
+      </Card>
+      <Card title="File Downloads" icon="document">
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-android-arm64-v8a.apk"
+          variant="secondary"
+          icon="download"
+        >
+          arm64-v8a.apk
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-android-armeabi-v7a.apk"
+          variant="secondary"
+          icon="download"
+        >
+          armeabi-v7a.apk
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-android-x86_64.apk"
+          variant="secondary"
+          icon="download"
+        >
+          x86_64.apk
+        </LinkButton>
+      </Card>
+    </CardGrid>
+  </TabItem>
+  <TabItem label="Linux">
+    <CardGrid>
+      <Card title="App Stores" icon="cloud-download">
+        [![](../../assets/Flathub-badge.png)](https://flathub.org/apps/one.jwr.interstellar)
+      </Card>
+      <Card title="Package Managers" icon="seti:shell">
+        **Flathub:**
+        <Code lang="sh" code="flatpak install flathub one.jwr.interstellar" />
+        **Arch User Repository:**
+        <Code lang="sh" code="yay -Syu interstellar-bin" />
+      </Card>
+      <Card title="File Downloads" icon="document">
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-linux-x86_64.AppImage"
+          variant="secondary"
+          icon="download"
+        >
+          x86_64.AppImage
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-linux-x86_64.tar.gz"
+          variant="secondary"
+          icon="download"
+        >
+          x86_64.tar.gz
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-linux-aarch64.AppImage"
+          variant="secondary"
+          icon="download"
+        >
+          aarch64.AppImage
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-linux-aarch64.tar.gz"
+          variant="secondary"
+          icon="download"
+        >
+          aarch64.tar.gz
+        </LinkButton>
+      </Card>
+    </CardGrid>
+  </TabItem>
+  <TabItem label="Windows">
+    <CardGrid>
+      <Card title="File Downloads" icon="document">
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-windows-x86_64.exe"
+          variant="secondary"
+          icon="download"
+        >
+          x86_64.exe (setup)
+        </LinkButton>
+        <LinkButton
+          href="https://github.com/interstellar-app/interstellar/releases/latest/download/interstellar-windows-x86_64.zip"
+          variant="secondary"
+          icon="download"
+        >
+          x86_64.zip (portable)
+        </LinkButton>
+      </Card>
+    </CardGrid>
+  </TabItem>
+</Tabs>
