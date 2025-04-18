@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://interstellar.jwr.one',
   integrations: [
     starlight({
       title: 'Interstellar',
