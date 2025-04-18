@@ -9,22 +9,32 @@ export default defineConfig({
     starlight({
       title: 'Interstellar',
       favicon: '/favicon.png',
+      logo: {
+        src: './public/favicon.png',
+      },
+      editLink: {
+        baseUrl:
+          'https://github.com/interstellar-app/interstellar-website/edit/main/',
+      },
       social: {
-        github: 'https://github.com/jwr1/interstellar',
+        github: 'https://github.com/interstellar-app/interstellar',
         matrix: 'https://matrix.to/#/#interstellar-space:matrix.org',
       },
       sidebar: [
-        // {
-        //   label: 'Guides',
-        //   items: [
-        //     // Each item here is one entry in the navigation menu.
-        //     { label: 'Example Guide', slug: 'guides/example' },
-        //   ],
-        // },
-        // {
-        //   label: 'Reference',
-        //   autogenerate: { directory: 'reference' },
-        // },
+        {
+          slug: 'install',
+        },
+        {
+          slug: 'docs',
+        },
+        {
+          label: 'Features',
+          autogenerate: { directory: 'features' },
+        },
+        {
+          label: 'Contributing',
+          autogenerate: { directory: 'contributing' },
+        },
       ],
     }),
   ],

@@ -7,29 +7,72 @@ hero:
     file: ../../assets/logo-foreground.png
   actions:
     - text: Install now
-      link: /install
+      link: /install/
       icon: download
+    - text: Documentation
+      link: /docs/
+      icon: open-book
+      variant: secondary
     - text: Source code
-      link: https://github.com/jwr1/interstellar
+      link: https://github.com/interstellar-app/interstellar
       icon: github
       variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-{/* ## Features
+## Features
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="Multi-client support">
+    Available for **Android**, **Linux**, and **Windows** devices, with more to
+    come. [Install now!](/install/)
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  <Card title="Multi-server support">
+    Connects to multiple Fediverse software, including
+    [**Mbin**](https://joinmbin.org), [**Lemmy**](https://join-lemmy.org), and
+    [**PieFed**](https://join.piefed.social).
   </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
+  <Card title="Numerous accounts with guests">
+    Sign in to as many Fediverse accounts as you wish, or browse anonymously as
+    a guest!
   </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="Settings Profiles">
+    Save, switch, and even [share](https://kbin.earth/m/interstellar_configs)
+    between groups of settings with ease. [Learn more here.](/features/profiles)
   </Card>
-</CardGrid> */}
+  <Card title="Filter Lists">
+    Filter out unwanted content from your feed with highly customizable (and
+    [sharable](https://kbin.earth/m/interstellar_configs)) keyword filters. You
+    can even use **regular expressions** if you so please.
+  </Card>
+  <Card title="Markdown Editor with Drafts">
+    Comes with a **detailed toolbar**, **keyboard shortcuts**, and a **Preview
+    tab**. Also comes with automatic and manual **draft support**, so you don't
+    lose your those precious comments you were about to post.
+  </Card>
+  <Card title="Free and Open Source">
+    Interstellar is 100% free to use and is also [open
+    source](https://github.com/interstellar-app/interstellar)! Please consider
+    [sponsoring us](https://github.com/sponsors/jwr1) or even
+    [contributing](/contributing) 🙏
+  </Card>
+</CardGrid>
+
+For even more features, be sure to checkout the Features section in the [documentation](/docs)!
+
+## Support Channels
+
+Feel free to reach out to us if you run into any issues, have any ideas or feedback for the app, would like to contribute, or just want to chat. These channels are also where we make announcements, such as new releases.
+
+<LinkCard
+  title="Matrix space"
+  href="https://matrix.to/#/#interstellar-space:matrix.org"
+/>
+
+<LinkCard title="Mbin magazine" href="https://kbin.earth/m/interstellar" />
+
+<LinkCard
+  title="GitHub issues"
+  href="https://github.com/interstellar-app/interstellar/issues"
+/>
