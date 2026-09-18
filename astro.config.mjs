@@ -17,10 +17,18 @@ export default defineConfig({
         baseUrl:
           'https://github.com/interstellar-app/interstellar-website/edit/main/',
       },
-      social: {
-        github: 'https://github.com/interstellar-app/interstellar',
-        matrix: 'https://matrix.to/#/#interstellar-space:matrix.org',
-      },
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/interstellar-app/interstellar',
+        },
+        {
+          icon: 'matrix',
+          label: 'Matrix',
+          href: 'https://matrix.to/#/#interstellar-space:matrix.org',
+        },
+      ],
       sidebar: [
         {
           slug: 'install',
@@ -28,13 +36,14 @@ export default defineConfig({
         {
           slug: 'docs',
         },
+
         {
           label: 'Features',
-          autogenerate: { directory: 'features' },
+          items: [{ autogenerate: { directory: 'features' } }],
         },
         {
           label: 'Contributing',
-          autogenerate: { directory: 'contributing' },
+          items: [{ autogenerate: { directory: 'contributing' } }],
         },
       ],
       plugins: [

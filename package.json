@@ -9,9 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.32.6",
-    "@catppuccin/starlight": "^1.0.0",
-    "astro": "^5.7.3",
-    "sharp": "^0.34.1"
+    "@astrojs/starlight": "^0.42.2",
+    "@catppuccin/starlight": "^2.1.0",
+    "astro": "^7.3.3",
+    "sharp": "^0.35.4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
